@@ -64,13 +64,13 @@
 <h2>Evaluation</h2>
 <p>
 <b>Groundtruth</b>: the groundtruth speech from novel chapter. <br>
-<b>MMCE-Qformer</b>: use the groundtruth text-audio pair as prompt, it serves as upper bound of prompt-based TTS performance. <br>
-<b>CLAP-RAG</b>: randomly select one text-audio pair as prompt text and prompt speech.  <br>
-<b>Baseline</b>: adopt text-only embedding model all-MiniLM-L6-v2 for retrieval.  <br>
-<b>Proposed</b>: our proposed method using Context-Enhanced CLAP for retrieval. <br>
-<b>&nbsp&nbsp&nbsp w/o Mem-T</b>: adopt text-only embedding model corom_sentence-embedding_chinese-base for retrieval. <br>
-<b>&nbsp&nbsp&nbsp w/o Mem-A</b>: our proposed method using Context-Enhanced CLAP for retrieval. <br>
-<b>&nbsp&nbsp&nbsp w/o Prefix Mask</b>: our proposed method using Context-Enhanced CLAP for retrieval. <br>
+<b>MMCE-Qformer</b>: proposed a multi-modal context-enhanced Qformer, utilizing compressive long-context information to improve TTS performance. <br>
+<b>CLAP-RAG</b>: proposed a RAG-enhanced prompt-based TTS framework using a context-aware contrastive language-audio pretraining model and it utilizes entire prompts to guide the generation process.  <br>
+<b>Baseline</b>: LM trained from scratch using Cosyvoice-LM as backbone.  <br>
+<b>Proposed</b>: Long-Context LM with context-aware memory block and prefix mask.  <br>
+<b>&nbsp&nbsp&nbsp w/o Mem-T</b>: Long-Context LM without CAM-T block and Mem-T. <br>
+<b>&nbsp&nbsp&nbsp w/o Mem-A</b>: Long-Context LM without CAM-A block and Mem-A. <br>
+<b>&nbsp&nbsp&nbsp w/o Prefix Mask</b>: Long-Context LM with standard casual mask. <br>
 </p>
 
 <p>
